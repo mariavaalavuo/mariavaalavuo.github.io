@@ -22,7 +22,7 @@
    Profiilikuva About Me -osiossa
    ========================== */
 img.about-profile {
-  width: 100px;          /* kiinteä leveys kuvasta */
+  width: 200px;          /* kiinteä leveys kuvasta */
   height: auto;          /* säilyttää kuvasuhteen */
   border-radius: 0;      /* ei pyöreitä kulmia */
 }
