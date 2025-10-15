@@ -52,6 +52,15 @@ header h1, header p {
   text-align: center;    /* keskittää tekstin vaakasuunnassa */
   margin-top: 20px;      /* tilaa kuvan ja tekstin välille */
 }
+/* Korostettu info headerin alla */
+header .subtitle {
+  font-weight: 500;                 /* hieman vahvempi fontti */
+  text-decoration: underline;       /* alleviivaa tekstin */
+  text-decoration-color: #0077cc;   /* sinertävä korostusväri */
+  text-underline-offset: 4px;       /* pieni väli tekstin ja viivan väliin */
+  margin-top: 10px;
+  color: #444;
+}
 
 /* ==========================
    Book promotion section
