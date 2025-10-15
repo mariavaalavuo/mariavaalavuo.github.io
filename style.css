@@ -54,6 +54,47 @@ header h1, header p {
 }
 
 /* ==========================
+   Book promotion section
+   ========================== */
+.book-container {
+  display: flex;               /* kuva ja teksti vierekkäin vaakasuoraan */
+  align-items: flex-start;     /* kohdistaa yläreunaan */
+  gap: 20px;                   /* väli kuvan ja tekstin välille */
+  margin: 40px 0;              /* tilaa ylä- ja alapuolelle */
+  flex-wrap: wrap;             /* pienillä näytöillä kuva ja teksti päällekkäin */
+}
+
+img.book-cover {
+  width: 150px;                /* kirjan kansikuvan leveys */
+  height: auto;                /* säilyttää kuvasuhteen */
+  border-radius: 5px;          /* pieni pyöristys kulmiin */
+}
+
+.book-text {
+  flex: 1;                     /* vie jäljelle jäävän tilan tekstille */
+  min-width: 200px;            /* estää liian kapean tekstin */
+}
+
+.book-text h3 {
+  font-size: 1.5em;            /* otsikon koko */
+  margin-bottom: 10px;
+}
+
+.book-text p {
+  font-size: 1.2em;            /* kappaletekstin koko */
+  color: #666;
+}
+
+.book-text a {
+  color: #0077cc;              /* linkin väri */
+  text-decoration: none;       /* poistaa alleviivauksen */
+}
+
+.book-text a:hover {
+  text-decoration: underline;  /* hover-efekti */
+}
+
+/* ==========================
    Body (yleiset sivun tyylit)
    ========================== */
 body {
