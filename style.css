@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+img.profile {
+  border-radius: 0;          /* ei pyöreitä kulmia */
+  display: block;            /* tekee kuvasta lohkon, jotta voidaan keskittää */
+  margin: 20px auto;         /* keskittää kuvan vaakasuunnassa ja antaa väliä ylä- ja alapuolelle */
+  max-width: 200px;          /* kuvan maksimileveys */
+  height: auto;              /* säilyttää kuvasuhteen */
+}
+
 body {
   font-family: 'Georgia', serif;
   line-height: 1.6;
