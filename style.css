@@ -94,6 +94,38 @@ img.book-cover {
   text-decoration: underline;  /* hover-efekti */
 }
 
+/* Book advertisement box */
+.book-ad {
+  background-color: #e7f5e7;       /* haalean vihreä tausta */
+  border-radius: 12px;             /* pyöristetyt kulmat */
+  padding: 20px 30px;              /* sisätilaa laatikon reunoihin */
+  margin: 40px auto;               /* väliä muihin elementteihin */
+  max-width: 800px;                /* ettei veny liian leveäksi */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* kevyt varjo */
+  text-align: center;              /* keskittää tekstin ja kuvan */
+}
+
+.book-ad h2 {
+  color: #2e6b2e;                  /* hieman tummempi vihreä otsikko */
+  margin-bottom: 15px;
+}
+
+.book-ad a {
+  color: #2e6b2e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.book-ad a:hover {
+  text-decoration: underline;
+}
+
+.book-cover {
+  margin-top: 20px;
+  max-width: 200px;                /* sopiva kansikuvan koko */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
 /* ==========================
    Navigation bar
    ========================== */
