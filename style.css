@@ -95,6 +95,38 @@ img.book-cover {
 }
 
 /* ==========================
+   Navigation bar
+   ========================== */
+.navbar {
+  background-color: #f8f8f8;   /* vaalea tausta */
+  padding: 15px 0;            /* pystysuuntainen tila */
+  text-align: center;         /* keskittää linkit */
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar ul {
+  list-style: none;           /* poistaa listamerkit */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;      /* vierekkäin */
+  margin: 0 20px;             /* väli linkkien väliin */
+}
+
+.navbar a {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #0077cc;
+}
+
+/* ==========================
    Body (yleiset sivun tyylit)
    ========================== */
 body {
