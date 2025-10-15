@@ -1,141 +1,168 @@
+/* ==========================
+   Yleiset nollaukset kaikille elementeille
+   ========================== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;            /* poistaa oletusmarginaalit */
+  padding: 0;           /* poistaa oletustäytteet */
+  box-sizing: border-box; /* sisällyttää paddingin ja borderin elementin kokoon */
 }
 
-/* Flex-container About Me -osiossa */
+/* ==========================
+   Flex-container About Me -osiossa
+   ========================== */
 .about-container {
-  display: flex;
-  align-items: flex-start;    /* kuvasta ja tekstistä lähtee yläreunasta */
-  gap: 20px;                  /* väli kuvan ja tekstin välille */
-  margin: 40px 0;             /* tilaa ylä- ja alapuolelle */
-  flex-wrap: wrap;            /* skaalautuu pienemmille näytöille */
+  display: flex;         /* asettaa kuvan ja tekstin vierekkäin vaakasuoraan */
+  align-items: flex-start; /* kohdistaa elementit yläreunaan */
+  gap: 20px;             /* väli kuvan ja tekstin välille */
+  margin: 40px 0;        /* tilaa ylä- ja alapuolelle About Me -osiota */
+  flex-wrap: wrap;       /* pienillä näytöillä kuva ja teksti asettuvat päällekkäin */
 }
 
-/* Profiilikuva vasemmalla */
+/* ==========================
+   Profiilikuva About Me -osiossa
+   ========================== */
 img.about-profile {
-  width: 250px;      /* kiinteä leveys */
-  height: auto;      /* säilyttää kuvasuhteen */
-  border-radius: 0;  /* ei pyöreitä kulmia */
+  width: 100px;          /* kiinteä leveys kuvasta */
+  height: auto;          /* säilyttää kuvasuhteen */
+  border-radius: 0;      /* ei pyöreitä kulmia */
 }
 
-/* Teksti oikealla */
+/* ==========================
+   About Me -tekstin asettelu
+   ========================== */
 .about-text {
-  flex: 1;                    /* vie jäljelle jäävän tilan */
-  min-width: 200px;           /* varmistaa, ettei teksti kutistu liikaa */
+  flex: 1;               /* vie jäljelle jäävän tilan kuvasta riippumatta */
+  min-width: 200px;      /* estää tekstin kutistumisen liian kapeaksi pienillä näytöillä */
 }
 
-/* Hero-kuva ylälaidassa koko leveydellä */
+/* ==========================
+   Hero-kuva ylälaidassa koko leveydellä
+   ========================== */
 img.hero-image {
-  width: 100%;       /* kuvan leveys koko näytön leveys */
-  height: auto;      /* säilyttää kuvasuhteen */
-  display: block;    /* poistaa ylimääräiset rivivälit */
-  margin: 0;         /* ei ylimääräistä marginaalia */
+  width: 100%;           /* kuvan leveys koko näytön leveys */
+  height: auto;          /* säilyttää kuvasuhteen */
+  display: block;        /* poistaa ylimääräiset rivivälit */
+  margin: 0;             /* ei ylimääräistä marginaalia */
 }
 
-/* Header-teksti kuvan alapuolelle */
+/* ==========================
+   Header-teksti hero-kuvan alapuolelle
+   ========================== */
 header h1, header p {
-  text-align: center;
-  margin-top: 20px;  /* tilaa kuvan ja tekstin väliin */
+  text-align: center;    /* keskittää tekstin vaakasuunnassa */
+  margin-top: 20px;      /* tilaa kuvan ja tekstin välille */
 }
 
+/* ==========================
+   Body (yleiset sivun tyylit)
+   ========================== */
 body {
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  font-family: 'Georgia', serif; /* pääfontti koko sivulle */
+  line-height: 1.6;              /* riviväli tekstille */
+  background-color: #fff;        /* taustaväri */
+  color: #333;                   /* tekstin väri */
+  padding: 20px;                 /* sisäinen marginaali koko sivulle */
+  max-width: 900px;              /* maksimileveys sivulle */
+  margin: 0 auto;                /* keskittää sivun vaakasuunnassa */
 }
 
+/* ==========================
+   Otsikot h1 ja h2
+   ========================== */
 h1, h2 {
-  font-family: 'Arial', sans-serif;
-  color: #222;
-  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif; /* otsikoiden fontti */
+  color: #222;                       /* otsikoiden väri */
+  margin-bottom: 10px;               /* väli otsikon ja seuraavan elementin välille */
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-top: 0;
+  font-size: 2.5em;                  /* h1-fonttikoko */
+  margin-top: 0;                      /* ei ylimääräistä marginaalia yläreunaan */
 }
 
 h2 {
-  font-size: 1.8em;
-  margin-top: 20px;
+  font-size: 1.8em;                  /* h2-fonttikoko */
+  margin-top: 20px;                   /* väli ylemmän elementin kanssa */
 }
 
-/* Linkit */
+/* ==========================
+   Linkit
+   ========================== */
 a {
-  color: #0077cc;
-  text-decoration: none;
+  color: #0077cc;                    /* linkin väri */
+  text-decoration: none;              /* poistaa alleviivauksen */
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline;         /* alleviivaa linkin hiiren päälle siirryttäessä */
 }
 
-/* Header */
+/* ==========================
+   Header
+   ========================== */
 header {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center;                 /* keskittää headerin sisällön */
+  margin-bottom: 40px;                /* tilaa headerin ja pääsisällön välille */
 }
 
 header h1 {
-  font-size: 3em;
-  color: #333;
+  font-size: 3em;                     /* suurentaa pääotsikon kokoa */
+  color: #333;                        /* otsikon väri */
 }
 
 header p {
-  font-size: 1.2em;
-  color: #666;
+  font-size: 1.2em;                   /* pienempi teksti headerissa */
+  color: #666;                        /* hieman vaaleampi väri */
 }
 
 header a {
-  color: #0077cc;
-  text-decoration: none;
+  color: #0077cc;                     /* linkin väri headerissa */
+  text-decoration: none;               /* poistaa alleviivauksen */
 }
 
 header a:hover {
-  text-decoration: underline;
+  text-decoration: underline;          /* hover-efekti */
 }
 
-/* Pääsisältö */
+/* ==========================
+   Pääsisältö
+   ========================== */
 main {
-  margin-top: 40px;
+  margin-top: 40px;                   /* tilaa yläpuolelle */
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 40px;                /* tilaa alapuolelle eri osioiden välillä */
 }
 
 section h2 {
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2em;                     /* otsikon koko osioissa */
+  color: #333;                        /* väri */
+  margin-bottom: 10px;                /* väli otsikon ja tekstin välille */
 }
 
 section p {
-  font-size: 1.2em;
-  color: #666;
+  font-size: 1.2em;                   /* kappaletekstin koko */
+  color: #666;                        /* tekstin väri */
 }
 
 section ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style-type: none;              /* poistaa listan pallukat */
+  padding-left: 0;                     /* poistaa vasemman reunan paddingin */
 }
 
 section ul li {
-  font-size: 1.2em;
-  color: #666;
-  margin-bottom: 10px;
+  font-size: 1.2em;                   /* listatekstin koko */
+  color: #666;                         /* listatekstin väri */
+  margin-bottom: 10px;                 /* väli listan elementtien välissä */
 }
 
-/* Footer */
+/* ==========================
+   Footer
+   ========================== */
 footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 1em;
-  color: #666;
+  text-align: center;                  /* keskittää footerin sisällön */
+  margin-top: 40px;                    /* tilaa yläpuolelle */
+  font-size: 1em;                      /* fonttikoko */
+  color: #666;                         /* väri */
 }
