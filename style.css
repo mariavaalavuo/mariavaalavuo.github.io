@@ -4,12 +4,27 @@
   box-sizing: border-box;
 }
 
-img.profile {
-  border-radius: 0;          /* ei pyöreitä kulmia */
-  display: block;            /* tekee kuvasta lohkon, jotta voidaan keskittää */
-  margin: 20px auto;         /* keskittää kuvan vaakasuunnassa ja antaa väliä ylä- ja alapuolelle */
-  max-width: 200px;          /* kuvan maksimileveys */
-  height: auto;              /* säilyttää kuvasuhteen */
+/* Flex-container About Me -osiossa */
+.about-container {
+  display: flex;
+  align-items: flex-start;    /* kuvasta ja tekstistä lähtee yläreunasta */
+  gap: 20px;                  /* väli kuvan ja tekstin välille */
+  margin: 40px 0;             /* tilaa ylä- ja alapuolelle */
+  flex-wrap: wrap;            /* skaalautuu pienemmille näytöille */
+}
+
+/* Profiilikuva vasemmalla */
+img.about-profile {
+  max-width: 250px;           /* haluttu isompi koko */
+  width: 100%;                /* responsiivisuus */
+  height: auto;               /* säilyttää kuvasuhteen */
+  border-radius: 0;           /* ei pyöreitä kulmia */
+}
+
+/* Teksti oikealla */
+.about-text {
+  flex: 1;                    /* vie jäljelle jäävän tilan */
+  min-width: 200px;           /* varmistaa, ettei teksti kutistu liikaa */
 }
 
 /* Hero-kuva ylälaidassa koko leveydellä */
