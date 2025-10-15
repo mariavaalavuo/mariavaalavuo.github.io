@@ -15,10 +15,9 @@
 
 /* Profiilikuva vasemmalla */
 img.about-profile {
-  max-width: 250px;           /* haluttu isompi koko */
-  width: 100%;                /* responsiivisuus */
-  height: auto;               /* säilyttää kuvasuhteen */
-  border-radius: 0;           /* ei pyöreitä kulmia */
+  width: 250px;      /* kiinteä leveys */
+  height: auto;      /* säilyttää kuvasuhteen */
+  border-radius: 0;  /* ei pyöreitä kulmia */
 }
 
 /* Teksti oikealla */
