@@ -12,6 +12,20 @@ img.profile {
   height: auto;              /* säilyttää kuvasuhteen */
 }
 
+/* Hero-kuva ylälaidassa koko leveydellä */
+img.hero-image {
+  width: 100%;       /* kuvan leveys koko näytön leveys */
+  height: auto;      /* säilyttää kuvasuhteen */
+  display: block;    /* poistaa ylimääräiset rivivälit */
+  margin: 0;         /* ei ylimääräistä marginaalia */
+}
+
+/* Header-teksti kuvan alapuolelle */
+header h1, header p {
+  text-align: center;
+  margin-top: 20px;  /* tilaa kuvan ja tekstin väliin */
+}
+
 body {
   font-family: 'Georgia', serif;
   line-height: 1.6;
