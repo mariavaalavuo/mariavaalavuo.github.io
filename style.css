@@ -65,7 +65,7 @@ header h1, header p {
 }
 
 img.book-cover {
-  width: 150px;                /* kirjan kansikuvan leveys */
+  width: 200px;                /* kirjan kansikuvan leveys */
   height: auto;                /* säilyttää kuvasuhteen */
   border-radius: 5px;          /* pieni pyöristys kulmiin */
 }
