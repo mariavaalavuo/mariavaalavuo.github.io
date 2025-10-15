@@ -238,4 +238,34 @@ footer {
   margin-top: 40px;                    /* tilaa yläpuolelle */
   font-size: 1em;                      /* fonttikoko */
   color: #666;                         /* väri */
+
+/* Publication list styling */
+.pub-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.5;
+}
+
+.pub-list em {
+  color: #333;
+  font-style: italic;
+}
+
+.pub-list a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.pub-list a:hover {
+  text-decoration: underline;
+}
+
+
+
 }
