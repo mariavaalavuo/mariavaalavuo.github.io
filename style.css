@@ -1,61 +1,71 @@
-.my-custom-class {
-    /* Original styles restored below */
-    body {
-        font-family: 'Arial, sans-serif';
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
+/* CSS for the site styling */
 
-    header {
-        background: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    nav {
-        margin: 20px 0;
-        padding: 10px;
-        background-color: #ddd;
-    }
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    .font-example {
-        font-size: 16px;
-        color: #333;
-    }
+nav {
+    margin: 20px 0;
+}
 
-    .profile-image {
-        width: 350px;
-        height: auto;
-    }
+.about-container {
+    padding: 20px;
+}
 
-    .hero-image {
-        width: 100%;
-        height: auto;
-    }
+.hero-image {
+    width: 100%;
+    height: auto;
+}
 
-    section {
-        margin: 20px 0;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
-    /* New Research-Visit Section */
-    .research-visit {
-        margin: 20px 0;
-        padding: 20px;
-        background-color: #e9f5ff;
-        border: solid 1px #b3d7ff;
-        border-radius: 5px;
-    }
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
 
-    .research-visit img {
-        width: 100px;
-        height: auto;
-    }
+a {
+    color: #35424a;
+    text-decoration: none;
+}
 
-    /* Old book promotion styles removed */
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.research-visit-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.research-visit-container img {
+    width: 100px;
 }
